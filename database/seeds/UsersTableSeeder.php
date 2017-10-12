@@ -16,6 +16,7 @@ class UsersTableSeeder extends Seeder
             'name' => 'alex',
             'email' => 'alex@api.com',
             'password' => bcrypt('root'),
+            'api_token' => str_random(60)
         ]);
 
         factory(App\Models\User::class, 49)->create();
